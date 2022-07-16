@@ -3,7 +3,6 @@ package com.hopefuls.service;
 import com.hopefuls.domain.Answer;
 import com.hopefuls.domain.Question;
 import com.hopefuls.domain.User;
-import com.sun.xml.internal.bind.v2.TODO;
 
 import java.util.List;
 
@@ -27,13 +26,13 @@ public interface IAnswerService {
     Answer getAnswerById(Integer aid);
 
     /**
-     * @param question: 问题
+     * @param qid: 问题主键
      * @return : 返回回答列表
      * @author Denwher
      * @description TODO 根据采纳率获取回答列表
      * @date 2022/7/13
      */
-    List<Answer> orderAnswerBySupport(Question question);
+    List<Answer> orderAnswerBySupport(Integer qid);
 
     /**
      * @param question: 问题
@@ -46,25 +45,25 @@ public interface IAnswerService {
 
     /**
      * @param answer: 添加的回答
-     * @param question: 回答的问题
-     * @param user: 回答问题的人
+     * @param qid: 回答的问题
+     * @param uid: 回答问题的人
      * @return : 添加成功返回true，否则false
      * @author Denwher
      * @description
     TODO 在问题下添加回复
      * @date 2022/7/13
      */
-    boolean addAnswer(Answer answer, Question question, User user);
+    boolean addAnswer(Answer answer, Integer qid, Integer uid);
 
     /**
      * @param answer: 更新点赞数的回答
-     * @param user: 点赞或取消点赞的人
+     * @param uid: 点赞或取消点赞的人
      * @return : 返回回答列表
      * @author Denwher
      * @description
     TODO 在问题下添加回复
      * @date 2022/7/13
      */
-    boolean modifyAnswerSupport(Answer answer, User user);
+    boolean modifyAnswerSupport(Answer answer, Integer uid);
 
 }

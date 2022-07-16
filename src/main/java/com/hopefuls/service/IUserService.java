@@ -53,6 +53,25 @@ public interface IUserService {
 
 
     /**
+     * @param username: 注册信息中填写的用户名
+     * @return : 修改成功返回true，否则返回false
+     * @author Denwher
+     * @description TODO 查找用户名是否已经被注册
+     * @date 2022/7/13
+     */
+    boolean findUsername(String username);
+
+
+    /**
+     * @param email: 注册信息中填写的用户名
+     * @return : 修改成功返回true，否则返回false
+     * @author Denwher
+     * @description TODO 查找邮箱是否已经被注册
+     * @date 2022/7/13
+     */
+    boolean findEmail(String email);
+
+    /**
      * @param user: 封装了用户信息的User对象
      * @return : 修改成功返回true，否则返回false
      * @author Denwher
