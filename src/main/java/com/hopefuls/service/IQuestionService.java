@@ -38,7 +38,7 @@ public interface IQuestionService {
     /**
      * @param qid: 问题的id
      * @param subscribeNum: 关注问题的人数
-     * @param user: 取消或关注问题的用户
+     * @param uid: 取消或关注问题的用户
      * @return : 操作成功，返回true，否则返回false
      * @author Denwher
      * @description TODO 修改问题关注量
