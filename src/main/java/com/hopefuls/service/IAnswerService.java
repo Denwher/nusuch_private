@@ -1,7 +1,6 @@
 package com.hopefuls.service;
 
 import com.hopefuls.domain.Answer;
-import com.hopefuls.domain.Question;
 
 import java.util.List;
 
