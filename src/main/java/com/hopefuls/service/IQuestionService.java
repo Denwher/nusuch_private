@@ -44,7 +44,7 @@ public interface IQuestionService {
      * @description TODO 修改问题关注量
      * @date 2022/7/13
      */
-    boolean updateQuestionSubscribeNum(Integer qid, Integer subscribeNum, User user);
+    boolean updateQuestionSubscribeNum(Integer qid, Integer subscribeNum, Integer uid);
 
 
     /**

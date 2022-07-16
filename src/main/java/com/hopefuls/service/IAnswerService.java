@@ -2,7 +2,6 @@ package com.hopefuls.service;
 
 import com.hopefuls.domain.Answer;
 import com.hopefuls.domain.Question;
-import com.hopefuls.domain.User;
 
 import java.util.List;
 
@@ -35,13 +34,13 @@ public interface IAnswerService {
     List<Answer> orderAnswerBySupport(Integer qid);
 
     /**
-     * @param question: 问题
+     * @param qid: 问题
      * @return : 返回回答列表
      * @author Denwher
      * @description TODO 根据时间排序获取回答列表
      * @date 2022/7/13
      */
-    List<Answer> orderAnswerByCreateTime(Question question);
+    List<Answer> orderAnswerByCreateTime(Integer qid);
 
     /**
      * @param answer: 添加的回答
